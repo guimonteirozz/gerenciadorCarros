@@ -65,4 +65,12 @@ public class Carro {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 }
