@@ -1,0 +1,6 @@
+/home/gufilho/gerenciadorcarros/src/main/java/com/gerenciador/gerenciadorcarros/GerenciadorcarrosApplication.java
+/home/gufilho/gerenciadorcarros/src/main/java/com/gerenciador/gerenciadorcarros/config/SwaggerConfig.java
+/home/gufilho/gerenciadorcarros/src/main/java/com/gerenciador/gerenciadorcarros/controllers/CarroController.java
+/home/gufilho/gerenciadorcarros/src/main/java/com/gerenciador/gerenciadorcarros/entity/Carro.java
+/home/gufilho/gerenciadorcarros/src/main/java/com/gerenciador/gerenciadorcarros/repository/CarroRepository.java
+/home/gufilho/gerenciadorcarros/src/main/java/com/gerenciador/gerenciadorcarros/services/CarroService.java

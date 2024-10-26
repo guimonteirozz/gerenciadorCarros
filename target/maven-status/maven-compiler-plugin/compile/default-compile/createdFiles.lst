@@ -1,0 +1,6 @@
+com/gerenciador/gerenciadorcarros/config/SwaggerConfig.class
+com/gerenciador/gerenciadorcarros/services/CarroService.class
+com/gerenciador/gerenciadorcarros/entity/Carro.class
+com/gerenciador/gerenciadorcarros/GerenciadorcarrosApplication.class
+com/gerenciador/gerenciadorcarros/repository/CarroRepository.class
+com/gerenciador/gerenciadorcarros/controllers/CarroController.class
