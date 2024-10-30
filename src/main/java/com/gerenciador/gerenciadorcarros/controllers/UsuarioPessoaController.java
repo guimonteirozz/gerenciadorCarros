@@ -42,4 +42,10 @@ public class UsuarioPessoaController {
         usuarioPessoaService.excluirUsuarioPessoa(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("/cadastrar")
+    public String cadastrarUsuario(@RequestParam String nome, String senha, String email, String telefone, String nomePessoa) {
+        usuarioPessoaService.cadastrarUsuario(nome, senha, email, telefone, nomePessoa);
+        return "Usuário cadastrado com sucesso!";
+    }
 }

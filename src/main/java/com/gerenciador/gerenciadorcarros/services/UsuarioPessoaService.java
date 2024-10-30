@@ -2,6 +2,7 @@ package com.gerenciador.gerenciadorcarros.services;
 
 import com.gerenciador.gerenciadorcarros.entity.UsuarioPessoa;
 import com.gerenciador.gerenciadorcarros.repository.UsuarioPessoaRepository;
+import com.gerenciador.gerenciadorcarros.utils.SenhaUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,5 +33,21 @@ public class UsuarioPessoaService {
 
     public void excluirUsuarioPessoa(Long id){
         usuarioPessoaRepository.deleteById(id);
+    }
+
+    public void cadastrarUsuario(String nome, String senha, String email, String telefone, String nomePessoa) {
+        // Criptografar a senha antes de armazená-la
+        String senhaCriptografada = SenhaUtils.criptografarSenha(senha);
+
+        // Aqui você adicionaria a lógica para salvar o usuário no banco de dados
+        UsuarioPessoa novoUsuario = new UsuarioPessoa();
+        novoUsuario.setNomeUsuario(nome);
+        novoUsuario.setSenha(senhaCriptografada);
+        novoUsuario.setEmail(email);
+        novoUsuario.setTelefone(telefone);
+        novoUsuario.setNomePessoa(nomePessoa);
+
+        // Salvar novoUsuario no banco de dados usando seu repositório
+        usuarioPessoaRepository.save(novoUsuario);
     }
 }

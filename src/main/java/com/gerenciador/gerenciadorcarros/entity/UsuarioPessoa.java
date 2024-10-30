@@ -10,10 +10,12 @@ public class UsuarioPessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome_usuario;
+    private String nomeUsuario;
     private String senha;
+    private String nomePessoa;
     private String email;
     private String telefone;
+
 
     // Getters e Setters
 
@@ -25,12 +27,12 @@ public class UsuarioPessoa {
         this.id = id;
     }
 
-    public String getNome_usuario() {
-        return nome_usuario;
+    public String getNomeUsuario() {
+        return nomeUsuario;
     }
 
-    public void setNome_usuario(String nome_usuario) {
-        this.nome_usuario = nome_usuario;
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
     }
 
     public String getEmail() {
@@ -47,6 +49,14 @@ public class UsuarioPessoa {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public String getNomePessoa() {
+        return nomePessoa;
+    }
+
+    public void setNomePessoa(String nomePessoa) {
+        this.nomePessoa = nomePessoa;
     }
 
     public String getTelefone() {
