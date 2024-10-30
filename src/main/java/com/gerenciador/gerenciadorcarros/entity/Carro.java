@@ -1,9 +1,6 @@
 package com.gerenciador.gerenciadorcarros.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Carro {
@@ -16,6 +13,10 @@ public class Carro {
     private int ano;
     private String cidade;
     private double preco;
+
+    @Column(length = 1024)
+    private String qrCode; // Campo para armazenar o QR code em Base64
+
 
     // Getters e Setters
     public Long getId() {
@@ -72,5 +73,13 @@ public class Carro {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public String getQrCode() {
+        return qrCode;
+    }
+
+    public void setQrCode(String qrCode) {
+        this.qrCode = qrCode;
     }
 }
