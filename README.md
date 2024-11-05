@@ -53,7 +53,7 @@ Execute o projeto
 
 **Para executar este projeto localmente, é necessário ter o PostgreSQL instalado e configurado.** Se você ainda não possui o PostgreSQL, faça o download e instale-o seguindo as instruções no [site oficial](https://www.postgresql.org/download/).
 
-### Configuração da Conexão com o Banco de Dados
+## Configuração da Conexão com o Banco de Dados
 
 1. Após instalar o PostgreSQL, crie um banco de dados chamado `gerenciadorcarros`.
    
